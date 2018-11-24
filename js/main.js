@@ -7,7 +7,7 @@ function loading() {
         $(".content").css("display", "block");
       });
     },
-    8000);
+    8);
 
 
 }
@@ -237,8 +237,13 @@ function drawSNike(ctx) {
   ctx.beginPath();
   var dh = document.documentElement.clientHeight;
   var dw = document.documentElement.clientWidth;
-  if (dw < 1921) {
+  if (dw <= 1600) {
     ctx.canvas.height = dh - dh * 0.8;
+    ctx.canvas.width = dw - dw * 0.7;
+    var scale = dw / 3000;
+    var x = 110;
+  } else if (dw <= 500) {
+    ctx.canvas.height = dh - dh * 1;
     ctx.canvas.width = dw - dw * 0.7;
     var scale = dw / 3000;
     var x = 110;

@@ -107,7 +107,7 @@
   margin-top: -80px;
 }
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1600px) {
 
   /* LOADING SCREAN ROTATING CIRCLE*/
   .rotate {
@@ -133,7 +133,7 @@
     display: block;
     position: relative;
     margin: 0 auto;
-    margin-top: -2vh;
+    margin-top: -3vh;
   }
 }
 
@@ -150,6 +150,7 @@
   /* LOADING SCREAN CONTAINER*/
   .nikeID {
     margin: 0 auto;
+    background: pink;
   }
 
   /* LOADING SCREAN TEXT*/
@@ -163,7 +164,45 @@
     display: block;
     position: relative;
     margin: 0 auto;
-    margin-top: -1vh;
+  }
+
+  .element {
+    margin: 5px 100px;
+  }
+
+  .sp-initial span {
+    width: 300px;
+    height: 250px;
+    border: none;
+    display: block;
+    float: left;
+    margin: 0;
+  }
+
+  .sp-replacer {
+    margin: 0;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 4px;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    /*border: solid 1px #91765d;
+    background: #eee;
+    color: #333;*/
+    vertical-align: middle;
+    width: 300px;
+    height: 300px;
+  }
+
+  .sp-preview {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: solid 1px #222;
+    margin-right: 5px;
+    float: left;
+    z-index: 0;
   }
 }
 
