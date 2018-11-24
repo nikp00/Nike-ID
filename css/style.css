@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*  PAGE CONTENT CONTAINER */
+.content {
+  display: none;
+  margin: 0 auto;
+}
+
+/* LOADING SCREAN CONTAINER*/
+.loadingScrean {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: block;
+  text-align: center;
+}
+
+.loadingAnimation {
+  width: 25vw;
+  height: 25vh;
+  align: center;
+  margin: auto auto;
+  position: absolute;
+  top: 30vh;
+  right: 0;
+  left: 0;
+}
+
+/* SVG LOGO CONTAINER*/
+.svgLogo {
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.title {
+  line-height: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-family: helvetica;
+  color: white;
+  font-weight: bold;
+}
+
+.element {
+  background: grey;
+  margin: 5px 15px;
+}
+
+.picker {
+  padding: 5px 30px 10px 30px;
+}
+
+/* TOGLE BUTTONS*/
+.buttons {
+  margin: 0 auto;
+}
+
+/* MERCURIAL VAPOR CONTAINER*/
+.mercurialVapor {
+  display: none;
+}
+
+.svgBackgroundImageContainer {
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+/* LOADING SCREAN ROTATING CIRCLE*/
+.rotate {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  -webkit-animation: rotation 8s infinite ease-in;
+}
+
+/* LOADING SCREAN CONTAINER*/
+.nikeID {
+  margin: 0 auto;
+}
+
+/* LOADING SCREAN TEXT*/
+.nikeIDText {
+  width: 300px;
+  padding-top: 10px;
+  align: center;
+}
+
+.c1 {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  margin-top: -80px;
+}
+
+@media only screen and (max-width: 1920px) {
+
+  /* LOADING SCREAN ROTATING CIRCLE*/
+  .rotate {
+    display: block;
+    width: 15vw;
+    margin: 0 auto;
+    -webkit-animation: rotation 8s infinite ease-in;
+  }
+
+  /* LOADING SCREAN CONTAINER*/
+  .nikeID {
+    margin: 0 auto;
+  }
+
+  /* LOADING SCREAN TEXT*/
+  .nikeIDText {
+    width: 20vw;
+    padding-top: 1vw;
+    align: center;
+  }
+
+  .c1 {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -2vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  /* LOADING SCREAN ROTATING CIRCLE*/
+  .rotate {
+    display: block;
+    width: 30vw;
+    margin: 0 auto;
+    -webkit-animation: rotation 8s infinite ease-in;
+  }
+
+  /* LOADING SCREAN CONTAINER*/
+  .nikeID {
+    margin: 0 auto;
+  }
+
+  /* LOADING SCREAN TEXT*/
+  .nikeIDText {
+    width: 35vw;
+    padding-top: 1vw;
+    align: center;
+  }
+
+  .c1 {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -1vh;
+  }
+}
+
+.nav {
+  width: 100%;
+  height: 10vh;
+  background: black;
+}
+
+.headerCircle {
+  height: 5vh;
+  padding-top: 2vh;
+}
+
+.headerText {
+  height: 5vh;
+}
+
+.headerIcons {
+  width: 50vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#airForce1 {
+  background: url("../img/leg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-position: 100% 93%;
+}
+
+#mercurialVapor {
+  background: url("../img/leg2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-position: 100% 93%;
+}
+
+#airForce1Button {
+  display: none;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
