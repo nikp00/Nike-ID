@@ -7,9 +7,7 @@ function loading() {
         $(".content").css("display", "block");
       });
     },
-    800);
-
-
+    8000);
 }
 
 $(function() {
@@ -238,7 +236,7 @@ function drawSNike(ctx) {
   var dh = document.documentElement.clientHeight;
   var dw = document.documentElement.clientWidth;
   if (dw <= 1600) {
-    ctx.canvas.height = dh - dh * 0.8;
+    ctx.canvas.height = dh - dh * 0.7;
     ctx.canvas.width = dw - dw * 0.7;
     var scale = dw / 3000;
     var x = 110;
@@ -281,9 +279,7 @@ function togleShoes() {
         $('.airForce1').css('display', 'none');
         $('#airForce1Button').css('display', 'block');
       }
-
     });
-
   });
 }
 
