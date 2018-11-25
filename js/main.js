@@ -7,7 +7,7 @@ function loading() {
         $(".content").css("display", "block");
       });
     },
-    8);
+    800);
 
 
 }
