@@ -246,3 +246,24 @@ body {
     -webkit-transform: rotate(359deg);
   }
 }
+
+.countdown {
+  width: 50%;
+  height: 60%;
+  line-height: 150%;
+  font-size: 8em;
+  color: white;
+  font-family: helvetica;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  left: 25%;
+  /*animation: pulse 1s ease-out 8;
+}
+
+@keyframes pulse {
+  50% {
+    font-size: 0em;
+  }*/
+}

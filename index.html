@@ -21,6 +21,22 @@
 
       <div class="nikeID">
         <img src="img/NikeID_circle.svg" class="rotate">
+
+        <div class="countdown" id="countdown">
+          <script>
+            var i = 0;
+            window.setInterval(function(){
+              i++;
+              if(i<=8){
+              document.getElementById('countdown').innerHTML = i;
+            }
+            else {
+              clearInterval();
+            }
+            }, 1000);
+
+          </script>
+        </div>
         <img src="img/NikeID_text.svg" class="nikeIDText">
       </div>
       <canvas id="c1" class="c1">
