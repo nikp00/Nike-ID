@@ -7,7 +7,7 @@ function loading() {
         $(".content").css("display", "block");
       });
     },
-    8000);
+    10000);
 }
 
 $(function() {
@@ -34,7 +34,6 @@ function pickersAirForce1() {
       maxSelectionSize: numberOfColors,
       move: function(tinycolor) {
         var color = $("#colorMainP").spectrum("get").toHexString();
-        console.log(color);
         $(".colorMain").css('fill', color);
       },
     });
@@ -48,7 +47,6 @@ function pickersAirForce1() {
       maxSelectionSize: numberOfColors,
       move: function(tinycolor) {
         var color = $("#colorSwoshP").spectrum("get").toHexString();
-        console.log(color);
         $(".colorSwosh").css('fill', color);
       },
     });
@@ -62,7 +60,6 @@ function pickersAirForce1() {
       maxSelectionSize: numberOfColors,
       move: function(tinycolor) {
         var color = $("#colorFrontPanelP").spectrum("get").toHexString();
-        console.log(color);
         $("#colorFrontPanel").css('fill', color);
       },
     });
@@ -76,7 +73,6 @@ function pickersAirForce1() {
       maxSelectionSize: numberOfColors,
       move: function(tinycolor) {
         var color = $("#colorBackPanelP").spectrum("get").toHexString();
-        console.log(color);
         $(".colorBackPanel").css('fill', color);
       },
     });
@@ -90,7 +86,6 @@ function pickersAirForce1() {
       maxSelectionSize: numberOfColors,
       move: function(tinycolor) {
         var color = $("#colorTopP").spectrum("get").toHexString();
-        console.log(color);
         $(".colorTop").css('fill', color);
       },
     });
@@ -104,7 +99,6 @@ function pickersAirForce1() {
       maxSelectionSize: numberOfColors,
       move: function(tinycolor) {
         var color = $("#colorMidsoleP").spectrum("get").toHexString();
-        console.log(color);
         $(".colorMidsole").css('fill', color);
       },
     });
@@ -118,7 +112,6 @@ function pickersAirForce1() {
       maxSelectionSize: numberOfColors,
       move: function(tinycolor) {
         var color = $("#colorSoleP").spectrum("get").toHexString();
-        console.log(color);
         $(".colorSole").css('fill', color);
       },
     });
@@ -136,7 +129,6 @@ function pickersAirForce1() {
       },
     });
   });
-  console.log("asd");
 }
 
 
@@ -152,7 +144,6 @@ function pickersMercurialVapor() {
       maxSelectionSize: numberOfColors,
       move: function(tinycolor) {
         var color = $("#solePlateP").spectrum("get").toHexString();
-        console.log(color);
         $(".solePlate").css('fill', color);
       },
     });
@@ -166,7 +157,6 @@ function pickersMercurialVapor() {
       maxSelectionSize: numberOfColors,
       move: function(tinycolor) {
         var color = $("#studsP").spectrum("get").toHexString();
-        console.log(color);
         $(".studs").css('fill', color);
       },
     });
@@ -180,7 +170,6 @@ function pickersMercurialVapor() {
       maxSelectionSize: numberOfColors,
       move: function(tinycolor) {
         var color = $("#mainP").spectrum("get").toHexString();
-        console.log(color);
         $(".main").css('fill', color);
       },
     });
@@ -194,7 +183,6 @@ function pickersMercurialVapor() {
       maxSelectionSize: numberOfColors,
       move: function(tinycolor) {
         var color = $("#mercurialP").spectrum("get").toHexString();
-        console.log(color);
         $(".mercurial").css('fill', color);
       },
     });
@@ -208,7 +196,6 @@ function pickersMercurialVapor() {
       maxSelectionSize: numberOfColors,
       move: function(tinycolor) {
         var color = $("#textureP").spectrum("get").toHexString();
-        console.log(color);
         $(".texture").css('stroke', color);
       },
     });
@@ -222,12 +209,10 @@ function pickersMercurialVapor() {
       maxSelectionSize: numberOfColors,
       move: function(tinycolor) {
         var color = $("#lacesP").spectrum("get").toHexString();
-        console.log(color);
         $(".laces").css('fill', color);
       },
     });
   });
-  console.log("asd");
 }
 
 function drawSNike(ctx) {
@@ -290,11 +275,9 @@ function hoverOverlay() {
       var id = $(this).attr('id');
       if (id == 'texture') {
         color = $('.' + id).css('stroke');
-        console.log(color);
         $('.' + id).css('stroke', 'rgba(255, 255, 0, 0.50)');
       } else {
         color = $('.' + id).css('fill');
-        console.log(color);
         $('.' + id).css('fill', 'rgba(255, 255, 0, 0.50)');
       }
 
@@ -310,4 +293,20 @@ function hoverOverlay() {
 
 
   });
+}
+
+function loadingScreanCircle() {
+  var i = -1;
+  var elements = [".st2", ".st3", ".st8", ".st4", ".st5", ".st6", ".st9", ".st7", ".st10"];
+  var colors = ["#C43D95" /*2*/ , "#E91F47" /*3*/ , "#F9A925" /*8*/ , "#EFE914" /*4*/ , "#B6D135" /*5*/ , "#6DC9C4" /*6*/ , "#2088C9" /*9*/ , "#2E4A9B" /*7*/ , "#804D9C" /*10*/ ];
+  setInterval(function() {
+    $(function() {
+      $(elements[i]).css("fill", colors[i]);
+    });
+    if (i < 9) {
+      clearInterval();
+    }
+    i++;
+
+  }, 1000);
 }
