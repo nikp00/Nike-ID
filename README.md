@@ -3,3 +3,5 @@
 A game that allows personalization of Nike sneakers.
 
 This project was created with HTML5, CSS3, JavaScript (libraries jQuery).
+
+![UPN](images/nikeid.png)
